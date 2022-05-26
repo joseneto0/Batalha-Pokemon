@@ -86,17 +86,23 @@ while True:
             sleep(0.7)
             print('\033[1;31mVEZ DO CHARIZARD\033[m')
             ataque = int(input('Qual vai ser seu ataque? [4 - rever os ataques] '))
-            while ataque < 0 or ataque > 4:
-                ataque = int(input('\033[1;31mNÚMERO INVÁLIDO.\033[m Qual vai ser seu ataque? [4 - rever os ataques] '))
-            if ataque == 0 or ataque == 1 or ataque == 2 or ataque == 3:
-                while limites_char[ataque] == 0:
-                    ataque = int(input('\033[1;31mLIMITE ZERADO\033[m. Escolha outro ataque: [4 - rever os ataques] '))
             while ataque == 4:
                 linha()
                 for i, e in enumerate(charizard_ataques):
                     print(f'{i} - {e}: {charizard_ataques[e]} de ataque')
                 linha()
                 ataque = int(input('Qual vai ser seu ataque? [4 - rever os ataques] '))
+            while ataque < 0 or ataque > 4:
+                ataque = int(input('\033[1;31mNÚMERO INVÁLIDO.\033[m Qual vai ser seu ataque? [4 - rever os ataques] '))
+            if ataque == 0 or ataque == 1 or ataque == 2 or ataque == 3:
+                while limites_char[ataque] == 0:
+                    ataque = int(input('\033[1;31mLIMITE ZERADO\033[m. Escolha outro ataque: [4 - rever os ataques] '))
+                    while ataque == 4:
+                        linha()
+                        for i, e in enumerate(charizard_ataques):
+                            print(f'{i} - {e}: {charizard_ataques[e]} de ataque')
+                        linha()
+                        ataque = int(input('Qual vai ser seu ataque? [4 - rever os ataques] '))
             sleep(0.7)
             print(f'Você ativou o ataque {keys_char[ataque]}, que da {values_char[ataque]} de dano, você pode utiliza-lo {limites_char[ataque]-1} vezes')
             limites_char[ataque] -= 1
@@ -162,17 +168,23 @@ while True:
             sleep(0.7)
             print('\033[1;34mVEZ DO BLASTOISE\033[m')
             ataque = int(input('Qual vai ser seu ataque? [4 - rever os ataques] '))
-            while ataque < 0 or ataque > 4:
-                ataque = int(input('\033[1;31mNÚMERO INVÁLIDO.\033[m Qual vai ser seu ataque? [4 - rever os ataques] '))
-            if ataque == 0 or ataque == 1 or ataque == 2 or ataque == 3:
-                while limites_blas[ataque] == 0:
-                    ataque = int(input('\033[1;31mLIMITE ZERADO\033[m. Escolha outro ataque: [4 - rever os ataques] '))
             while ataque == 4:
                 linha()
                 for i, e in enumerate(blastoise_ataques):
                     print(f'{i} - {e}: {blastoise_ataques[e]} de ataque')
                 linha()
                 ataque = int(input('Qual vai ser seu ataque? [4 - rever os ataques] '))
+            while ataque < 0 or ataque > 4:
+                ataque = int(input('\033[1;31mNÚMERO INVÁLIDO.\033[m Qual vai ser seu ataque? [4 - rever os ataques] '))
+            if ataque == 0 or ataque == 1 or ataque == 2 or ataque == 3:
+                while limites_blas[ataque] == 0:
+                    ataque = int(input('\033[1;31mLIMITE ZERADO\033[m. Escolha outro ataque: [4 - rever os ataques] '))
+                    while ataque == 4:
+                        linha()
+                        for i, e in enumerate(blastoise_ataques):
+                            print(f'{i} - {e}: {blastoise_ataques[e]} de ataque')
+                        linha()
+                        ataque = int(input('Qual vai ser seu ataque? [4 - rever os ataques] '))
             sleep(0.7)
             print(f'Você ativou o ataque {keys_blas[ataque]}, que da {values_blas[ataque]} de dano, você pode utiliza-lo {limites_blas[ataque] - 1} vezes')
             limites_blas[ataque] -= 1
@@ -238,17 +250,23 @@ while True:
             sleep(0.7)
             print('\033[1;92mVEZ DO VENUSAUR\033[m')
             ataque = int(input('Qual vai ser seu ataque? [4 - rever os ataques] '))
-            while ataque < 0 or ataque > 4:
-                ataque = int(input('\033[1;31mNÚMERO INVÁLIDO.\033[m Qual vai ser seu ataque? [4 - rever os ataques] '))
-            if ataque == 0 or ataque == 1 or ataque == 2 or ataque == 3:
-                while limites_ven[ataque] == 0:
-                    ataque = int(input('\033[1;31mLIMITE ZERADO\033[m. Escolha outro ataque: [4 - rever os ataques] '))
             while ataque == 4:
                 linha()
                 for i, e in enumerate(venusaur_ataques):
                     print(f'{i} - {e}: {venusaur_ataques[e]} de ataque')
                 linha()
                 ataque = int(input('Qual vai ser seu ataque? [4 - rever os ataques] '))
+            while ataque < 0 or ataque > 4:
+                ataque = int(input('\033[1;31mNÚMERO INVÁLIDO.\033[m Qual vai ser seu ataque? [4 - rever os ataques] '))
+            if ataque == 0 or ataque == 1 or ataque == 2 or ataque == 3:
+                while limites_ven[ataque] == 0:
+                    ataque = int(input('\033[1;31mLIMITE ZERADO\033[m. Escolha outro ataque: [4 - rever os ataques] '))
+                    while ataque == 4:
+                        linha()
+                        for i, e in enumerate(venusaur_ataques):
+                            print(f'{i} - {e}: {venusaur_ataques[e]} de ataque')
+                        linha()
+                        ataque = int(input('Qual vai ser seu ataque? [4 - rever os ataques] '))
             sleep(0.7)
             print(f'Você ativou o ataque {keys_ven[ataque]}, que da {values_ven[ataque]} de dano, você pode utiliza-lo {limites_ven[ataque]-1} vezes')
             limites_ven[ataque] -= 1
