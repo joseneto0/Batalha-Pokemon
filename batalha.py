@@ -2,7 +2,6 @@ from time import sleep
 from random import randint
 import funções
 
-
 while True:
     nomes = ['Charizard', 'Blastoise', 'Venusaur']
 
