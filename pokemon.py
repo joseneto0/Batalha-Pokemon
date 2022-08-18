@@ -15,7 +15,7 @@ class Pokemon:
     
     def mostrar_ataques(self, ataques, dano):
         for i in range(len(ataques)):
-            print(f'[{i+1}] - {ataques[i]} ~ {dano[i]} de dano'.center(15), flush=True)
+            print(f'[{i+1}] - {ataques[i]} - {dano[i]} de dano'.center(15), flush=True)
             sleep(1)
     
     def decrementar_vida(self, v):
