@@ -12,6 +12,7 @@ class Pokemon:
 
     def conta(self, atk, dano_atk):
         return ((2 * self.nivel // (5 + 2) * atk * dano_atk // self.defe) // 50) + 2
+    
     def mostrar_ataques(self, ataques, dano):
         for i in range(len(ataques)):
             print(f'[{i+1}] - {ataques[i]} ~ {dano[i]} de dano'.center(15), flush=True)
